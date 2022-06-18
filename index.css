@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding : 0;
+   box-sizing: border-box;
+}
+
+.wrapper{
+    width:100%;
+    max-width:1440px;
+    margin:0 auto;
+    
+
+}
+
+nav{
+    background:#333
+}
+
+nav ul{
+    list-style-type:none;
+    padding:0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-align:center;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+
+nav ul li a:hover{
+    background-color: #555;
+}
+
+
+
+body{
+    background-color:hsl(0, 0%, 95%);
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family:lexend deca;
+    font-size:15px;
+    display:flex;
+    min-height:100vh;
+    width:100%;
+}
+
+
+
+main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    flex-wrap: wrap;
+    flex-direction:row;
+    margin-top:50px;
+}
+
+.sedan{
+    background-color:  hsl(31, 77%, 52%);
+    width:50%;
+    max-width:269px;
+    min-height:450px;
+    padding:42px;
+    position: relative;
+    border-radius:7px 0 0 7px;
+}
+
+img{
+    margin-bottom : 25px;
+}
+
+h1{
+    font-family: big shoulders display;
+    font-weight:700;
+    font-size:30px;
+    margin-bottom: 20px;
+    color:hsl(0, 0%, 95%);
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+button{
+    padding: 12px;
+    border-radius:25px;
+    width:146px;
+    outline:none;
+    border: 1px solid hsl(0, 0%, 95%);
+    font-Family:inherit;
+    margin-top: 60px;
+    text-align:center;
+}
+
+.sedan button{
+    background-color:hsl(0, 0%, 95%); 
+    color:hsl(31, 77%, 52%);
+}
+
+.suv{
+    background-color:  hsl(184, 100%, 22%);
+    width:50%;
+    max-width:278px;
+    height:450px;
+    padding:42px;
+    position: relative;
+   
+}
+
+.suv button{
+    background-color:hsl(0, 0%, 95%); 
+    color:hsl(184, 100%, 22%);
+}
+
+.luxury{
+    background-color:  hsl(179, 100%, 13%);
+    width:50%;
+    max-width:278px;
+    height:450px;
+    padding:42px;
+    position: relative;
+    border-radius:0 7px 7px 0;
+}
+
+.luxury button{
+    background-color:hsl(0, 0%, 95%); 
+    color:hsl(179, 100%, 13%);
+}
+
+button:hover{
+    background:transparent;
+    color:hsl(0, 0%, 95%); 
+}
+
+button :active{
+    transform: scale(0.9);
+}
+
+@media only screen and (max-width:1000px) {
+	body{
+		display: flex;
+		width: 100%;
+		overflow: scroll;
+		flex-wrap: wrap;
+	  }
+  
+	  main{
+		  padding: 50px 0;
+		  flex-direction: column;
+		}
+	  
+		.sedan{
+		  border-radius: 7px 7px 0 0;
+		}
+	  
+		.luxury{
+		  border-radius: 0 0 7px 7px;
+		}
+	  
+		 p {
+		  font-size: 0.77rem;
+		}
+
+  }
